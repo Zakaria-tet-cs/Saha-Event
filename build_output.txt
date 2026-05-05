@@ -1,0 +1,51 @@
+
+> saha-event@0.1.0 build
+> next build --webpack
+
+⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\D:\Si_antigravity\saha-event\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\D:\Si_antigravity\saha-event\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+  Skipping creating a lockfile at D:\Si_antigravity\saha-event\.next\lock because we're using WASM bindings
+▲ Next.js 16.2.4 (webpack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 10.1s
+  Running TypeScript ...
+⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\D:\Si_antigravity\saha-event\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\D:\Si_antigravity\saha-event\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+  Finished TypeScript in 8.7s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/18) ...
+⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\D:\Si_antigravity\saha-event\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\D:\Si_antigravity\saha-event\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+  Generating static pages using 7 workers (4/18) 
+  Generating static pages using 7 workers (8/18) 
+  Generating static pages using 7 workers (13/18) 
+✓ Generating static pages using 7 workers (18/18) in 1490ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /admin
+├ ƒ /admin/salles/edit/[id]
+├ ○ /admin/salles/new
+├ ○ /auth/complete-profile
+├ ○ /auth/login
+├ ○ /auth/reset-password
+├ ○ /auth/signup
+├ ○ /auth/verify
+├ ○ /auth/verify-otp
+├ ○ /contact
+├ ○ /espace-client
+├ ○ /profile
+├ ○ /salles
+├ ƒ /salles/[id]
+└ ○ /settings
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

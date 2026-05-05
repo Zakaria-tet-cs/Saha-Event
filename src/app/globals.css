@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #011627; /* Deep Navy Blue */
+  --color-secondary: #d4af37; /* Royal Gold */
+  --color-accent: #b8952b; /* Darker Gold */
+  --color-beige: #fdfbf7; /* Luxury Beige Background */
+  --color-surface: #ffffff;
+  --color-soft-black: #1a1a1a;
+  
+  --color-success: #0d9488;
+  --color-danger: #be123c;
+
+  --color-background: var(--color-beige);
+  --color-foreground: var(--color-soft-black);
+  --color-muted-foreground: var(--text-muted);
+
+  --font-sans: var(--font-inter), "Segoe UI", Roboto, sans-serif;
+  
+  --shadow-premium: 0 10px 40px -10px rgba(1, 22, 39, 0.1);
+  --shadow-gold: 0 10px 30px -5px rgba(212, 175, 55, 0.4);
+  --shadow-glow-gold: 0 0 20px rgba(212, 175, 55, 0.6);
+}
+
+@layer base {
+  :root {
+    --background: #fdfbf7;
+    --foreground: #1a1a1a;
+    --nav-bg: rgba(255, 255, 255, 0.7);
+    --card-bg: #ffffff;
+    --text-muted: #6b7280;
+  }
+
+  .dark {
+    --background: #010c15; /* Even deeper navy for dark mode */
+    --foreground: #fdfbf7;
+    --nav-bg: rgba(1, 12, 21, 0.8);
+    --card-bg: #011627;
+    --text-muted: #94a3b8;
+    --color-primary: #fdfbf7;
+    --color-soft-black: #fdfbf7;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-secondary selection:text-white transition-colors duration-500;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tighter text-foreground font-black;
+  }
+
+  input, textarea, select {
+    color: #111827 !important;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: #6B7280 !important;
+  }
+}
+
+@layer utilities {
+  .glass-nav {
+    @apply backdrop-blur-xl border-b border-white/10;
+    background-color: var(--nav-bg);
+  }
+
+  .card-premium {
+    @apply rounded-3xl p-10 shadow-sm transition-all duration-500 border border-secondary/10 hover:shadow-2xl hover:shadow-secondary/10 hover:border-secondary/40;
+    background-color: var(--card-bg);
+  }
+  
+  .gold-gradient {
+    @apply bg-gradient-to-r from-secondary to-accent;
+  }
+
+  .glow-gold {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4), 0 0 10px rgba(212, 175, 55, 0.2);
+  }
+
+  .text-glow-gold {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+  }
+  
+  .immersive-header {
+    @apply relative h-[60vh] flex items-center justify-center overflow-hidden bg-primary;
+  }
+}

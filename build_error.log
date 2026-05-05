@@ -1,0 +1,44 @@
+
+> saha-event@0.1.0 build
+> next build --webpack
+
+⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\D:\Si_antigravity\saha-event\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\D:\Si_antigravity\saha-event\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+  Skipping creating a lockfile at D:\Si_antigravity\saha-event\.next\lock because we're using WASM bindings
+▲ Next.js 16.2.4 (webpack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+Failed to compile.
+
+./src/app/espace-client/page.tsx
+Error:   x Expected a semicolon
+     ,-[D:\Si_antigravity\saha-event\src\app\espace-client\page.tsx:376:1]
+ 373 |     } catch (err: any) {
+ 374 |       setPasswordError(err.message);
+ 375 |     } finally {
+ 376 |     } finally {
+     :       ^^^^^^^
+ 377 |       setUpdatingPassword(false);
+ 378 |     }
+ 379 |   };
+     `----
+
+Caused by:
+    0: failed to process js file
+    1: Syntax Error
+    at module.exports.__wbindgen_error_new (D:\Si_antigravity\saha-event\node_modules\next\wasm\@next\swc-wasm-nodejs\wasm.js:665:17)
+    at wasm.wasm.__wbindgen_error_new externref shim (wasm://wasm/wasm.wasm-0849fe6e:wasm-function[35092]:0x14cb866)
+    at wasm.wasm.wasm[1883d881a7905053]::transform_sync (wasm://wasm/wasm.wasm-0849fe6e:wasm-function[1005]:0x666203)
+    at wasm.wasm.wasm_bindgen_futures[9d7b310d6153a321]::future_to_promise::<wasm[1883d881a7905053]::transform::{closure#0}>::{closure#0}::{closure#0} (wasm://wasm/wasm.wasm-0849fe6e:wasm-function[13850]:0x11b9878)
+    at wasm.wasm.<wasm_bindgen_futures[9d7b310d6153a321]::queue::Queue>::new::{closure#0} (wasm://wasm/wasm.wasm-0849fe6e:wasm-function[9603]:0xff85b8)
+    at wasm.wasm.<dyn core[f69e0e472a72c355]::ops::function::FnMut<(_,), Output = _> as wasm_bindgen[d64814e1a33cf728]::closure::WasmClosure>::describe::invoke::<wasm_bindgen[d64814e1a33cf728]::JsValue, ()> (wasm://wasm/wasm.wasm-0849fe6e:wasm-function[34561]:0x14c7a1b)
+    at wasm.wasm.closure5233 externref shim (wasm://wasm/wasm.wasm-0849fe6e:wasm-function[35955]:0x14d0e94)
+    at __wbg_adapter_50 (D:\Si_antigravity\saha-event\node_modules\next\wasm\@next\swc-wasm-nodejs\wasm.js:367:10)
+    at real (D:\Si_antigravity\saha-event\node_modules\next\wasm\@next\swc-wasm-nodejs\wasm.js:140:20)
+
+Import trace for requested module:
+./src/app/espace-client/page.tsx
+
+
+> Build failed because of webpack errors
